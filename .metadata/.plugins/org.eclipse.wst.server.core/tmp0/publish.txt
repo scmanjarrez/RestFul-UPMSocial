@@ -1,0 +1,7 @@
+#GlassFish 3
+#Mon Apr 11 20:39:24 CEST 2016
+org.eclipse.jst.jee.server\:REST2JAXRS=C\:\\Users\\scman\\Desktop\\Universidad\\3-Tercero\\Segundo Cuatrimestre\\Sistemas Orientados a Servicios VI\\RestFul\\glassfish-4.1.1\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\REST2JAXRS
+org.eclipse.jst.jee.server\:REST1HolaMundo=C\:\\Users\\scman\\Desktop\\Universidad\\3-Tercero\\Segundo Cuatrimestre\\Sistemas Orientados a Servicios VI\\RestFul\\glassfish-4.1.1\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\REST1HolaMundo
+org.eclipse.jst.jee.server\:REST1bHolaMundo=C\:\\Users\\scman\\Desktop\\Universidad\\3-Tercero\\Segundo Cuatrimestre\\Sistemas Orientados a Servicios VI\\RestFul\\glassfish-4.1.1\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\REST1bHolaMundo
+org.eclipse.jst.jee.server\:REST4TodosWebAPI=C\:\\Users\\scman\\Desktop\\Universidad\\3-Tercero\\Segundo Cuatrimestre\\Sistemas Orientados a Servicios VI\\RestFul\\glassfish-4.1.1\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\REST4TodosWebAPI
+org.eclipse.jst.jee.server\:REST3TodoWebAPI=C\:\\Users\\scman\\Desktop\\Universidad\\3-Tercero\\Segundo Cuatrimestre\\Sistemas Orientados a Servicios VI\\RestFul\\glassfish-4.1.1\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\REST3TodoWebAPI

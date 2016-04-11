@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.glassfish.jst.server.GlassfishServerLaunchConfigurationType">
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" -Doracle.mds.cache=simple "/>
+<stringAttribute key="server-id" value="GlassFish 4 at localhost [domain1]"/>
+</launchConfiguration>
