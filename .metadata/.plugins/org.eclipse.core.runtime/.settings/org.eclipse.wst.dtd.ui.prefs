@@ -1,9 +1,9 @@
-dtdComment=\#586E75 | null | null | true | null | null
-dtdData=\#657A81 | null | null | null | null | null
-dtdDefault=\#657A81 | null | null | null | null | null
-dtdKeyword=\#B58900 | null | false | null | null | null
-dtdString=\#2AA198 | null | null | null | null | null
-dtdSymbol=\#657A81 | null | null | null | null | null
-dtdTag=\#657A81 | null | null | null | null | null
-dtdTagName=\#657A81 | null | null | null | null | null
+dtdComment=\#7F9F7F | null | null | null | null | null
+dtdData=\#F6F3E8 | null | null | null | null | null
+dtdDefault=\#F6F3E8 | null | null | null | null | null
+dtdKeyword=\#EFEFAF | null | null | null | null | null
+dtdString=\#CC9393 | null | null | null | null | null
+dtdSymbol=\#B3B784 | null | false | null | null | null
+dtdTag=\#D4C4A9 | null | false | null | null | null
+dtdTagName=\#D4C4A9 | null | false | null | null | null
 eclipse.preferences.version=1

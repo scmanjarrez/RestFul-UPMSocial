@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="REST4TodosWebAPI">
-        <property name="context-root" value="REST4TodosWebAPI"/>
-        <property name="java-output-path" value="/REST4TodosWebAPI/build/classes"/>
-    </wb-module>
-</project-modules>

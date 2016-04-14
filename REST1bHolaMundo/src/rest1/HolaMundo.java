@@ -39,6 +39,7 @@ public class HolaMundo {
     return "<?xml version=\"1.0\"?>" + "<hola>Hola JAX-RS" + "</hola>";
   }
 
+  /*http://localhost:8080/REST1bHolaMundo/rest/holamundo/saluda/sergio/chica?&apellido2=manjarrez*/
   @GET
   @Path("saluda/{nombre}/{apellido}")
   @Produces(MediaType.TEXT_HTML)
