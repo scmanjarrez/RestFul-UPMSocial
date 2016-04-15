@@ -8,6 +8,11 @@ import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Date;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
 
 import rest.user.User;
 
@@ -77,7 +82,7 @@ public class prueba {
 	}
 	
 	public static void main(String[] args) {
-		Connection nConexion = null;
+		/*Connection nConexion = null;
 		String metaDatos = null;
 		ArrayList<User> u_list = null;
 		try {
@@ -94,7 +99,25 @@ public class prueba {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		}
+		}*/
+		User usuario = new User();
+		usuario.setAddress("Calle Hola Mundo 2");
+		usuario.setUsername("testUN");
+		usuario.setFirst_name("UsuarioPrueba");
+		//usuario.setPhone(910212354);
+		//usuario.setPhone(null);
+		Date date = new Date();
+		usuario.setRegister_date(date);
+		
+		try {
+            JAXBContext context = JAXBContext.newInstance(User.class);
+
+            Marshaller marshaller = context.createMarshaller();
+            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+            marshaller.marshal(usuario, System.out);
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
 		
 	}
 

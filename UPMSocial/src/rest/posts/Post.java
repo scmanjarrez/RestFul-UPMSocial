@@ -1,20 +1,20 @@
 package rest.posts;
 
 import javax.xml.bind.annotation.XmlRootElement;
-import java.sql.Date;
+import java.util.Date;
 
 @XmlRootElement
-public class Posts {
+public class Post {
 	private int id;
 	private String author_username;
 	private String content;
-	private java.sql.Date creation_date;
+	private Date creation_date;
 
-	public Posts(){
+	public Post(){
 		
 	}
 
-	public Posts(int id, String author_username, String content, Date creation_date) {
+	public Post(int id, String author_username, String content, Date creation_date) {
 		super();
 		this.id = id;
 		this.author_username = author_username;
@@ -46,11 +46,11 @@ public class Posts {
 		this.content = content;
 	}
 
-	public java.sql.Date getCreation_date() {
+	public Date getCreation_date() {
 		return creation_date;
 	}
 
-	public void setCreation_date(java.sql.Date creation_date) {
+	public void setCreation_date(Date creation_date) {
 		this.creation_date = creation_date;
 	}
 

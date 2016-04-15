@@ -1,17 +1,28 @@
 package rest.user;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
-import java.sql.Date;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlAdapter;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 @XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType (propOrder={"username","first_name","last_name","phone","email","address","register_date"})
 public class User {
+	
 	private String username;
 	private String first_name;
 	private String last_name;
 	private Integer phone;
 	private String email;
 	private String address;
-	private java.sql.Date register_date;
+	@XmlJavaTypeAdapter(DateFormatterAdapter.class)
+	private Date register_date;
 
 	public User(){
 		
@@ -36,7 +47,7 @@ public class User {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-
+	
 	public String getFirst_name() {
 		return first_name;
 	}
@@ -77,11 +88,11 @@ public class User {
 		this.address = address;
 	}
 
-	public java.sql.Date getRegister_date() {
+	public Date getRegister_date() {
 		return register_date;
 	}
 
-	public void setRegister_date(java.sql.Date register_date) {
+	public void setRegister_date(Date register_date) {
 		this.register_date = register_date;
 	}
 
@@ -91,5 +102,19 @@ public class User {
 				+ phone + ", email=" + email + ", address=" + address + ", register_date=" + register_date + "]";
 	}
 
+
+    private static class DateFormatterAdapter extends XmlAdapter<String, Date> {
+        private final SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+
+        @Override
+        public Date unmarshal(final String v) throws Exception {
+            return dateFormat.parse(v);
+        }
+
+        @Override
+        public String marshal(final Date v) throws Exception {
+            return dateFormat.format(v);
+        }
+    }
 
 } 

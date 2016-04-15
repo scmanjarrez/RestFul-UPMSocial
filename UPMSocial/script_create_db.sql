@@ -69,7 +69,7 @@ BEGIN;
 INSERT INTO POSTS 
 VALUES 
 ('1','v130111','El mundo es un lugar mejor','2013-05-17'), 
-('2','v130111','En un lugar de la mancha...','2014-03-25'), 
+('2','v130111','En un lugar de la mancha1...','2014-03-25'), 
 ('3','v130109','En una galaxia muy lejana...',NOW()), 
 ('4','v130108','Mayday mayday, necesitamos ayuda','2011-09-28'), 
 ('5','v130107','Caminante, son tus huellas
@@ -81,7 +81,10 @@ y al volver la vista atrás
 se ve la senda que nunca
 se ha de volver a pisar.
 Caminante no hay camino
-sino estelas en la mar.','2013-12-31');
+sino estelas en la mar.','2013-12-31'),
+('6','v130111','En un lugar de la mancha2...','2010-03-25'), 
+('7','v130111','En un lugar de la mancha3...','2008-03-25'), 
+('8','v130111','En un lugar de la mancha4...','2007-03-25');
 COMMIT;
 
 BEGIN;
@@ -96,22 +99,31 @@ COMMIT;
 
 update USERS
 set phone=910245356
-where username=v130107;
+where username='v130107';
 
 update USERS
 set email='emaildeprueba@gmail.com'
-where username=v130108;
+where username='v130108';
 
 update USERS
 set address='C/Montepríncipe 210'
-where username=v130109;
+where username='v130109';
 
 update USERS
 set last_name='Arguiñano'
-where username=v130110;
+where username='v130110';
 
 select * from FRIENDS;
 select * from USERS;
 select * from POSTS;
-show grants for 'upmsocial'@'%';
-grant all privileges on upmsocial.* to 'upmsocial'@'%';
+
+select * from USERS
+where username='v130111';
+
+select *, date(creation_date) as newe from POSTS
+where author_username='v130111';
+
+select * from POSTS
+where author_username='v130111'
+and creation_date between str_to_date('01-01-2000','%d-%m-%Y') and str_to_date('01-01-2016','%d-%m-%Y')
+limit 0,2;

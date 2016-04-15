@@ -2135,3 +2135,490 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 01:17:36.576
 !MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY org.eclipse.ui 4 4 2016-04-15 01:26:30.319
+!MESSAGE Conflicting handlers for org.eclipse.team.ui.synchronizeAll: {org.eclipse.team.internal.ui.synchronize.actions.GlobalRefreshAction$2@2c653522} vs {org.eclipse.team.internal.ui.synchronize.actions.GlobalRefreshAction$2@315ac3cf}
+
+!ENTRY org.eclipse.ui 4 4 2016-04-15 01:26:30.415
+!MESSAGE Conflicting handlers for org.eclipse.team.ui.synchronizeLast: {org.eclipse.team.internal.ui.synchronize.actions.GlobalRefreshAction$3@51836fda} vs {org.eclipse.team.internal.ui.synchronize.actions.GlobalRefreshAction$3@641a7486}
+
+!ENTRY org.eclipse.ui 4 4 2016-04-15 01:27:08.141
+!MESSAGE Conflicting handlers for org.eclipse.team.ui.synchronizeAll: {org.eclipse.team.internal.ui.synchronize.actions.GlobalRefreshAction$2@5dd5be49} vs {org.eclipse.team.internal.ui.synchronize.actions.GlobalRefreshAction$2@2c653522}
+
+!ENTRY org.eclipse.ui 4 4 2016-04-15 01:27:08.149
+!MESSAGE Conflicting handlers for org.eclipse.team.ui.synchronizeLast: {org.eclipse.team.internal.ui.synchronize.actions.GlobalRefreshAction$3@51836fda} vs {org.eclipse.team.internal.ui.synchronize.actions.GlobalRefreshAction$3@1f0b0f3d}
+
+!ENTRY org.eclipse.ui 4 4 2016-04-15 01:28:19.804
+!MESSAGE Conflicting handlers for org.eclipse.team.ui.synchronizeAll: {org.eclipse.team.internal.ui.synchronize.actions.GlobalRefreshAction$2@516d2ba3} vs {org.eclipse.team.internal.ui.synchronize.actions.GlobalRefreshAction$2@2c653522}
+
+!ENTRY org.eclipse.ui 4 4 2016-04-15 01:28:19.812
+!MESSAGE Conflicting handlers for org.eclipse.team.ui.synchronizeLast: {org.eclipse.team.internal.ui.synchronize.actions.GlobalRefreshAction$3@51836fda} vs {org.eclipse.team.internal.ui.synchronize.actions.GlobalRefreshAction$3@5ee29674}
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 01:33:42.824
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 01:35:04.618
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 01:35:43.215
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY org.eclipse.ui 4 4 2016-04-15 01:39:03.325
+!MESSAGE Conflicting handlers for org.eclipse.team.ui.synchronizeAll: {org.eclipse.team.internal.ui.synchronize.actions.GlobalRefreshAction$2@2c653522} vs {org.eclipse.team.internal.ui.synchronize.actions.GlobalRefreshAction$2@470c2385}
+
+!ENTRY org.eclipse.ui 4 4 2016-04-15 01:39:03.331
+!MESSAGE Conflicting handlers for org.eclipse.team.ui.synchronizeLast: {org.eclipse.team.internal.ui.synchronize.actions.GlobalRefreshAction$3@51836fda} vs {org.eclipse.team.internal.ui.synchronize.actions.GlobalRefreshAction$3@57de0d32}
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 01:39:15.163
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 01:44:35.805
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 01:45:10.796
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 01:46:11.353
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:02:19.587
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:03:18.251
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:04:21.865
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:04:46.396
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:07:35.529
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:08:02.553
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:10:56.278
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:20:21.544
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:20:55.309
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2016-04-15 02:20:58.376
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.lang.Exception: deploy is failing=Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: org.apache.catalina.LifecycleException: java.lang.ClassNotFoundException: IOException. Please see server.log for more details.
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:602)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2016-04-15 02:20:58.461
+!MESSAGE cannot Deploy UPMSocial
+!STACK 0
+java.lang.Exception: deploy is failing=Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: org.apache.catalina.LifecycleException: java.lang.ClassNotFoundException: IOException. Please see server.log for more details.
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:602)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:21:21.306
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2016-04-15 02:21:21.353
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.lang.Exception: deploy is failing=Application with name [UPMSocial] is not deployed
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:602)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2016-04-15 02:21:21.373
+!MESSAGE cannot Deploy UPMSocial
+!STACK 0
+java.lang.Exception: deploy is failing=Application with name [UPMSocial] is not deployed
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:602)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:21:35.903
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2016-04-15 02:21:35.936
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.lang.Exception: deploy is failing=Application with name [UPMSocial] is not deployed
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:602)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2016-04-15 02:21:35.946
+!MESSAGE cannot Deploy UPMSocial
+!STACK 0
+java.lang.Exception: deploy is failing=Application with name [UPMSocial] is not deployed
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:602)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:21:40.031
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2016-04-15 02:21:40.056
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.lang.Exception: deploy is failing=Application with name [UPMSocial] is not deployed
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:602)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2016-04-15 02:21:40.071
+!MESSAGE cannot Deploy UPMSocial
+!STACK 0
+java.lang.Exception: deploy is failing=Application with name [UPMSocial] is not deployed
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:602)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:21:53.978
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2016-04-15 02:21:54.012
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.lang.Exception: deploy is failing=Application with name [UPMSocial] is not deployed
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:602)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2016-04-15 02:21:54.032
+!MESSAGE cannot Deploy UPMSocial
+!STACK 0
+java.lang.Exception: deploy is failing=Application with name [UPMSocial] is not deployed
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:602)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:23:15.042
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2016-04-15 02:23:15.319
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.lang.Exception: deploy is failing=Application with name [UPMSocial] is not deployed
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:602)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2016-04-15 02:23:15.437
+!MESSAGE cannot Deploy UPMSocial
+!STACK 0
+java.lang.Exception: deploy is failing=Application with name [UPMSocial] is not deployed
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:602)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2016-04-15 02:23:24.931
+!MESSAGE GlassFish: Undeploy is failing=
+!STACK 0
+java.lang.Exception: undeploy is failing=Application UPMSocial is not deployed on this target [server]
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.undeploy(GlassfishServerBehaviourDelegate.java:449)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:509)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:23:40.772
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:25:19.569
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:27:49.895
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:32:16.708
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:34:06.610
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:35:57.547
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:38:33.200
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:41:10.764
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 02:59:52.668
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 03:10:00.900
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 03:12:16.918
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 03:17:39.251
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 03:19:50.719
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 03:23:38.076
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 03:24:46.348
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 03:25:04.345
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 03:27:36.408
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 03:31:52.376
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 03:32:51.733
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 03:35:37.151
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 03:46:37.409
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 03:48:50.866
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 03:50:32.622
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 03:56:34.006
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 03:59:31.294
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:00:10.831
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:03:47.081
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:06:31.660
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:11:35.980
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:12:19.823
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:13:23.889
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:14:18.370
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:15:17.841
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:16:21.275
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:21:21.519
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:23:52.515
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:24:18.461
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:24:44.308
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:25:36.182
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:26:44.856
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:27:25.066
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:30:00.431
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:30:42.092
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:31:22.634
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:32:13.270
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:33:09.128
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:34:00.856
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:34:28.439
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:35:25.099
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:35:50.388
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:36:30.597
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:37:11.647
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:38:59.592
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:39:34.368
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:40:07.751
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:41:25.422
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:42:14.196
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:43:51.054
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:47:00.397
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:48:31.276
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 04:49:19.786
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 05:45:24.394
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 05:52:53.184
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 05:53:28.054
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 05:54:05.320
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 05:55:06.296
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 06:13:50.333
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-04-15 06:15:05.274
+!MESSAGE GlassFish: Deploy direcotry C:\Users\scman\Desktop\Universidad\3-Tercero\Segundo Cuatrimestre\Sistemas Orientados a Servicios VI\RestFul\glassfish-4.1.1\glassfish4\glassfish\domains\domain1\eclipseApps\UPMSocial
