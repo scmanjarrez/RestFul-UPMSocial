@@ -3,7 +3,6 @@
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="rest.user.User"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="javax.xml.bind.annotation.adapters.XmlAdapter"/>
 <fullyQualifiedTypeName name="javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.Form"/>
@@ -16,14 +15,12 @@
 <fullyQualifiedTypeName name="javax.ws.rs.client.WebTarget"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
 <fullyQualifiedTypeName name="javax.ws.rs.client.Invocation"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.Response"/>
 <fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlType"/>
 <fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlAccessorType"/>
 <fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlAttribute"/>
 <fullyQualifiedTypeName name="org.eclipse.persistence.oxm.annotations.XmlCustomizer"/>
-<fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlElement"/>
 <fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlValue"/>
 <fullyQualifiedTypeName name="rest.posts.Posts"/>
 <fullyQualifiedTypeName name="javax.ws.rs.QueryParam"/>
@@ -32,4 +29,12 @@
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="java.text.ParseException"/>
 <fullyQualifiedTypeName name="javax.ws.rs.DefaultValue"/>
+<fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlElement"/>
+<fullyQualifiedTypeName name="javax.sound.midi.Synthesizer"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletResponse"/>
+<fullyQualifiedTypeName name="javax.ws.rs.core.GenericEntity"/>
+<fullyQualifiedTypeName name="rest.posts.PostsList"/>
+<fullyQualifiedTypeName name="rest.posts.Post"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

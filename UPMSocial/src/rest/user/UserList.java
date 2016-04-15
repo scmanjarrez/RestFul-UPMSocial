@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-public class UsersList {
+public class UserList {
 	private ArrayList<User> users;
 
-	public UsersList(){
+	public UserList(){
 
 	}
 
-	public UsersList(ArrayList<User> users) {
+	public UserList(ArrayList<User> users) {
 		super();
 		this.users = users;
 	}

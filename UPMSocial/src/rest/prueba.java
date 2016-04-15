@@ -9,14 +9,13 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
 import rest.post.Post;
-import rest.post.PostsList;
+import rest.post.PostList;
 import rest.user.User;
 
 public class prueba {
@@ -124,7 +123,7 @@ public class prueba {
 		
 		Date date = new Date();
 		
-		PostsList p_list = new PostsList();
+		PostList p_list = new PostList();
 		Post post = new Post();
 		post.setAuthor_username("lorca");
 		post.setContent("tasdasdasd asdasdasd estUN");
@@ -139,10 +138,10 @@ public class prueba {
 		ArrayList<Post> pl = new ArrayList<Post>();
 		pl.add(post);
 		pl.add(post1);
-		p_list.setP_list(pl);
+		p_list.setPost(pl);
 		
 		try {
-            JAXBContext context = JAXBContext.newInstance(PostsList.class);
+            JAXBContext context = JAXBContext.newInstance(PostList.class);
 
             Marshaller marshaller = context.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);

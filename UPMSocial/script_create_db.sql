@@ -127,6 +127,10 @@ select * from POSTS;
 select * from USERS
 where username='v130111';
 
+select * from POSTS
+where author_username='v130111'
+and content like '%';
+
 select * from USERS
 where first_name like 'David'
 limit 0,2;
@@ -141,7 +145,12 @@ limit 0,6;
 select * from POSTS
 where author_username='v130111'
 and creation_date between str_to_date('01-01-2000','%d-%m-%Y') and str_to_date('01-01-2016','%d-%m-%Y')
+and content like '%%%'
 order by creation_date asc
+limit 0,5;
+
+select * from POSTS
+where content like '%lugar de la mancha%'
 limit 0,5;
 
 
