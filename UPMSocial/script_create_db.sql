@@ -113,6 +113,13 @@ update USERS
 set last_name='Arguiñano'
 where username='v130110';
 
+insert into USERS(username, first_name, last_name, register_date) values ('v130000', 'David', 'Herrero', CURDATE());
+
+insert into FRIENDS values ('v130111','v130000'), ('v130111','v130108');
+
+delete from USERS
+where username='v130000';
+
 select * from FRIENDS;
 select * from USERS;
 select * from POSTS;
@@ -120,10 +127,26 @@ select * from POSTS;
 select * from USERS
 where username='v130111';
 
-select *, date(creation_date) as newe from POSTS
-where author_username='v130111';
+select * from USERS
+where first_name like 'David'
+limit 0,2;
+
+select * from USERS
+join FRIENDS on USERS.username = FRIENDS.friend
+where FRIENDS.username='v130111'
+and USERS.first_name like '%'
+limit 0,6;
+
 
 select * from POSTS
 where author_username='v130111'
 and creation_date between str_to_date('01-01-2000','%d-%m-%Y') and str_to_date('01-01-2016','%d-%m-%Y')
-limit 0,2;
+order by creation_date asc
+limit 0,5;
+
+
+
+
+
+
+

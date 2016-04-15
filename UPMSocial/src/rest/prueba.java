@@ -9,11 +9,14 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
+import rest.post.Post;
+import rest.post.PostsList;
 import rest.user.User;
 
 public class prueba {
@@ -100,7 +103,7 @@ public class prueba {
 				e.printStackTrace();
 			}
 		}*/
-		User usuario = new User();
+		/*User usuario = new User();
 		usuario.setAddress("Calle Hola Mundo 2");
 		usuario.setUsername("testUN");
 		usuario.setFirst_name("UsuarioPrueba");
@@ -115,6 +118,35 @@ public class prueba {
             Marshaller marshaller = context.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
             marshaller.marshal(usuario, System.out);
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }*/
+		
+		Date date = new Date();
+		
+		PostsList p_list = new PostsList();
+		Post post = new Post();
+		post.setAuthor_username("lorca");
+		post.setContent("tasdasdasd asdasdasd estUN");
+		post.setId(1);
+		post.setCreation_date(date);
+		Post post1 = new Post();
+		post1.setAuthor_username("lorca");
+		post1.setContent("tasdasdasd asdasdasd estUN");
+		post1.setId(2);
+		post1.setCreation_date(date);
+		
+		ArrayList<Post> pl = new ArrayList<Post>();
+		pl.add(post);
+		pl.add(post1);
+		p_list.setP_list(pl);
+		
+		try {
+            JAXBContext context = JAXBContext.newInstance(PostsList.class);
+
+            Marshaller marshaller = context.createMarshaller();
+            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+            marshaller.marshal(p_list, System.out);
         } catch (JAXBException e) {
             e.printStackTrace();
         }

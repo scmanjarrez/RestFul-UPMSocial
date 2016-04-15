@@ -5,23 +5,23 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class UsersList {
-	private ArrayList<User> user;
+	private ArrayList<User> users;
 
 	public UsersList(){
 
 	}
 
-	public UsersList(ArrayList<User> user) {
+	public UsersList(ArrayList<User> users) {
 		super();
-		this.user = user;
+		this.users = users;
 	}
 
 	public ArrayList<User> getUser() {
-		return user;
+		return users;
 	}
 
-	public void setUser(ArrayList<User> user) {
-		this.user = user;
+	public void setUser(ArrayList<User> users) {
+		this.users = users;
 	}
 
 }
