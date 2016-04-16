@@ -38,7 +38,7 @@ public class prueba {
 		Statement sentencia = conexion.createStatement();
 		ResultSet rsTabla = sentencia.executeQuery("select * from "+tabla);
 		ResultSetMetaData metaD = rsTabla.getMetaData();
-		
+
 		int NCol = metaD.getColumnCount();
 		for(int i=1; i <= NCol;i++){
 			if (i == 1){
@@ -50,10 +50,10 @@ public class prueba {
 					String columnName = rs.getString("COLUMN_NAME");
 					resultado = resultado + columnName + ",";
 				}
-				
+
 				nResultado = resultado.substring(0,resultado.length()-1)+';'; // Cambiamos la ',' por un ';' para mantener la estructura
 				nResultado = nResultado + metaD.getColumnLabel(i) + ","+ metaD.getColumnTypeName(i) + ","+ metaD.getColumnDisplaySize(i);
-				
+
 			}else if(i == NCol){
 				nResultado = nResultado +  ";" + metaD.getColumnLabel(i) + ","+ metaD.getColumnTypeName(i) + ","+ metaD.getColumnDisplaySize(i);
 			}else{
@@ -63,14 +63,14 @@ public class prueba {
 		}
 		return nResultado;
 	}
-	
+
 	public static ArrayList<User> obtenerUsuarios(Connection conexion)
 			throws SQLException {
 		User user;	
 		ArrayList<User> u_list = new ArrayList<User>();
 		Statement sentencia = conexion.createStatement();
 		ResultSet rsTabla = sentencia.executeQuery("select * from USERS");
-		
+
 		while(rsTabla.next()){
 			user = new User();
 			user.setUsername(rsTabla.getString("username"));
@@ -84,7 +84,7 @@ public class prueba {
 		}
 		return u_list;
 	}
-	
+
 	public static void main(String[] args) {
 		/*Connection nConexion = null;
 		String metaDatos = null;
@@ -112,7 +112,7 @@ public class prueba {
 		//usuario.setPhone(null);
 		Date date = new Date();
 		usuario.setRegister_date(date);
-		
+
 		try {
             JAXBContext context = JAXBContext.newInstance(User.class);
 
@@ -122,12 +122,23 @@ public class prueba {
         } catch (JAXBException e) {
             e.printStackTrace();
         }*/
-		
-		DateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+
+		/*	DateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 		Date date = new Date();
 		String reg_date = df.format(date);
-		System.out.println(reg_date);
-	/*	
+		System.out.println(reg_date);*/
+
+		String sql = "update USERS set";
+
+		sql = sql +" first_name = ?,";
+		sql = sql +" last_name = ?,";
+		sql = sql +" phone = ?,";
+		sql = sql +" email = ?,";
+		sql = sql +" address = ?,";
+		sql = sql.substring(0,sql.length()-1)+" ";
+		sql = sql+"where author_username = ?";
+		System.out.println(sql);
+		/*	
 		PostList p_list = new PostList();
 		Post post = new Post();
 		post.setAuthor_username("lorca");
@@ -139,12 +150,12 @@ public class prueba {
 		post1.setContent("tasdasdasd asdasdasd estUN");
 		post1.setId(2);
 		post1.setCreation_date(date);
-		
+
 		ArrayList<Post> pl = new ArrayList<Post>();
 		pl.add(post);
 		pl.add(post1);
 		p_list.setPost(pl);
-		
+
 		try {
             JAXBContext context = JAXBContext.newInstance(PostList.class);
 
@@ -154,7 +165,7 @@ public class prueba {
         } catch (JAXBException e) {
             e.printStackTrace();
         }
-		*/
+		 */
 	}
 
 }

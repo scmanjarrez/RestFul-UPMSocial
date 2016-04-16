@@ -2,7 +2,7 @@
   "version": "v1",
   "title": "Eclipse.org Error Reporting Server",
   "description": "Automated Error Reporting for eclipse.org",
-  "timestamp": 1459600456139,
+  "timestamp": 1460833338682,
   "ttl": 20160,
   "helpUrl": "https://wiki.eclipse.org/EPP/Logging",
   "feedbackUrl": "https://docs.google.com/a/codetrails.com/forms/d/1wd9AzydLv_TMa7ZBXHO7zQIhZjZCJRNMed-6J4fVNsc/viewform",
@@ -53,5 +53,5 @@
     ":org.eclipse.ecf.filetransfer.*:",
     ":java.net.*:"
   ],
-  "problemsZipLastDownloadTimestamp": 1459600758478
+  "problemsZipLastDownloadTimestamp": 1460833640884
 }

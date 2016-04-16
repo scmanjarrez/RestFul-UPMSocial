@@ -207,7 +207,8 @@ and username like '%';
 
 select * from USERS
 join FRIENDS on USERS.username = FRIENDS.friend
-where FRIENDS.username='v130111';
+where FRIENDS.username='v130111'
+and USERS.first_name like '%%%';
 
 select * from POSTS;
 update USERS set first_name='Rafael' where username='v1301088';
@@ -219,3 +220,9 @@ where author_username='v130111' and id=8;
 
 delete from POSTS
 where author_username='v130111' and id=8;
+
+select * from USERS where first_name like '%%%';
+update USERS set last_name = 'Chica' where username = 'v130111';
+
+select * from FRIENDS
+where username = 'v130111';
