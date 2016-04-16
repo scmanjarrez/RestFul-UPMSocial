@@ -7,6 +7,8 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -121,8 +123,11 @@ public class prueba {
             e.printStackTrace();
         }*/
 		
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 		Date date = new Date();
-		
+		String reg_date = df.format(date);
+		System.out.println(reg_date);
+	/*	
 		PostList p_list = new PostList();
 		Post post = new Post();
 		post.setAuthor_username("lorca");
@@ -149,7 +154,7 @@ public class prueba {
         } catch (JAXBException e) {
             e.printStackTrace();
         }
-		
+		*/
 	}
 
 }

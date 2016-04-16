@@ -37,12 +37,14 @@ CREATE TABLE POSTS (
     author_username VARCHAR(50) NOT NULL,
     content MEDIUMTEXT NOT NULL,
     creation_date DATETIME NOT NULL,
+    last_edited DATETIME,
     PRIMARY KEY (id),
     CONSTRAINT fk_author_username_USERS FOREIGN KEY (author_username)
         REFERENCES USERS (username)
         ON UPDATE CASCADE ON DELETE CASCADE
 )  ENGINE=INNODB;
 
+-- alter table POSTS CHANGE last_edited last_edited datetime;
 CREATE TABLE FRIENDS (
     username VARCHAR(50) NOT NULL,
     friend VARCHAR(50) NOT NULL,
@@ -127,6 +129,7 @@ where username='v130000';
 select * from FRIENDS;
 select * from USERS;
 select * from POSTS;
+delete from USERS where username='palomino';
 
 select * from USERS
 where username='v130111';
@@ -206,7 +209,13 @@ select * from USERS
 join FRIENDS on USERS.username = FRIENDS.friend
 where FRIENDS.username='v130111';
 
-select * from FRIENDS;
+select * from POSTS;
 update USERS set first_name='Rafael' where username='v1301088';
 update USERS set first_name='Roberto' where username='v130107';
 select * from USERS;
+
+update POSTS set content='Lo acabo de modificar', last_edited='2016-04-16 06:08:03'
+where author_username='v130111' and id=8;
+
+delete from POSTS
+where author_username='v130111' and id=8;

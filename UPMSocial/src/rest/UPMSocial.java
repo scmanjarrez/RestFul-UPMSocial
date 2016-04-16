@@ -1,10 +1,15 @@
 package rest;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 
+import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -14,6 +19,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Request;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
+import javax.ws.rs.core.Response.Status;
+import javax.xml.bind.JAXBElement;
 
 import rest.post.Post;
 import rest.post.PostList;
@@ -25,7 +32,10 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.Types;
+import java.sql.PreparedStatement;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 /**
@@ -80,6 +90,43 @@ public class UPMSocial {
 		return resp;
 	}
 
+	// Añade un nuevo usuario a la red
+	@POST
+	@Consumes({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
+	public Response postUser(JAXBElement<User> user) {
+		Response resp;
+		User info = user.getValue();
+		User aux;
+
+		Connection nConexion = null;
+		try {
+			nConexion = connectToDB();
+			try {
+				aux = obtenerUsuario(nConexion, info.getUsername());
+				if(aux != null)
+					resp = Response.noContent().build();
+				else {
+					nuevoUsuario(nConexion, info.getUsername(), info);
+					resp = Response.status(Status.CREATED).header("Location", uriInfo.getAbsolutePath().toString()+"/"+info.getUsername()).build();
+				}
+			} catch (SQLException e) {
+				System.err.println("Fallo al ejecutar la query.");
+				resp = Response.status(Response.Status.BAD_REQUEST).build();
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			System.err.println("Fallo al conectar a la DB.");
+			resp = Response.status(Response.Status.NOT_FOUND).build();
+		}finally{
+			try {
+				nConexion.close();
+			} catch (Exception e) {
+				System.err.println("Fallo al cerrar la conexión con la DB.");
+			}
+		}
+		return resp;
+	}
+
+
 	// Devuelve información de un usuario en concreto
 	@GET
 	@Path("{username}")
@@ -93,8 +140,9 @@ public class UPMSocial {
 			user = obtenerUsuario(nConexion, username);
 			if(user != null)
 				resp = Response.ok(user).build();
-			else
+			else {
 				resp = Response.status(Response.Status.NOT_FOUND).build();
+			}
 		} catch (ClassNotFoundException | SQLException e) {
 			System.err.println("Fallo al conectar a la DB.");
 			resp = Response.status(Response.Status.NOT_FOUND).build();
@@ -121,12 +169,21 @@ public class UPMSocial {
 			@DefaultValue("%") @QueryParam("content") String content) {
 		Response resp;
 		DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
-		Date date = new Date();
+		Calendar c = Calendar.getInstance();
+		c.add(Calendar.DATE, 1);
 		String fechaFin="";
 		if(fFin.equals(""))
-			fechaFin = df.format(date);
-		else
-			fechaFin = fFin;
+			fechaFin = df.format(c.getTime());
+		else {
+			try {
+				c.setTime(df.parse(fFin));
+			} catch (ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			c.add(Calendar.DATE, 1);
+			fechaFin = df.format(c.getTime());
+		}
 
 		ArrayList<Post> posts = null;
 		Connection nConexion = null;
@@ -156,12 +213,94 @@ public class UPMSocial {
 		return resp;
 	}
 
-	@GET
-	@Path("/prueba")
-	@Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
-	public Response getPrueba(@QueryParam("info")String info,@QueryParam("amigos") String amigos){
-		Response resp = Response.status(Response.Status.ACCEPTED).build();;
-		System.out.println("info="+info+" amigos="+amigos);
+	// Crea un post del usuario
+	@POST
+	@Path("{username}/posts")
+	@Consumes({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
+	public Response postUserPost(JAXBElement<Post> post, @PathParam("username") String username) {
+		Response resp;
+		Post info = post.getValue();
+
+		Connection nConexion = null;
+		try {
+			nConexion = connectToDB();
+			try {
+				int id = nuevoPost(nConexion, username, info);
+				resp = Response.status(Status.CREATED).header("Location", uriInfo.getAbsolutePath().toString()+"/"+id).build();
+			} catch (SQLException e) {
+				System.err.println("Fallo al ejecutar la query.");
+				resp = Response.status(Response.Status.BAD_REQUEST).build();
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			System.err.println("Fallo al conectar a la DB.");
+			resp = Response.status(Response.Status.NOT_FOUND).build();
+		}finally{
+			try {
+				nConexion.close();
+			} catch (Exception e) {
+				System.err.println("Fallo al cerrar la conexión con la DB.");
+			}
+		}
+		return resp;
+	}
+	
+	// Edita un post del usuario
+	@PUT
+	@Path("{username}/posts/{id}")
+	@Consumes({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
+	public Response putUserPost(JAXBElement<Post> post, @PathParam("username") String username,
+			@PathParam("id") int id) {
+		Response resp;
+		Post info = post.getValue();
+
+		Connection nConexion = null;
+		try {
+			nConexion = connectToDB();
+			try {
+				editarPost(nConexion, username, info, id);
+				resp = Response.status(Status.OK).header("Location", uriInfo.getAbsolutePath().toString()).build();
+			} catch (SQLException e) {
+				System.err.println("Fallo al ejecutar la query.");
+				resp = Response.status(Response.Status.BAD_REQUEST).build();
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			System.err.println("Fallo al conectar a la DB.");
+			resp = Response.status(Response.Status.NOT_FOUND).build();
+		}finally{
+			try {
+				nConexion.close();
+			} catch (Exception e) {
+				System.err.println("Fallo al cerrar la conexión con la DB.");
+			}
+		}
+		return resp;
+	}
+	
+	// Elimina un post del usuario
+	@DELETE
+	@Path("{username}/posts/{id}")
+	public Response deleteUserPost(@PathParam("username") String username, @PathParam("id") int id) {
+		Response resp;
+		Connection nConexion = null;
+		try {
+			nConexion = connectToDB();
+			try {
+				eliminarPost(nConexion, username, id);
+				resp = Response.ok().build();
+			} catch (SQLException e) {
+				System.err.println("Fallo al ejecutar la query.");
+				resp = Response.status(Response.Status.BAD_REQUEST).build();
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			System.err.println("Fallo al conectar a la DB.");
+			resp = Response.status(Response.Status.NOT_FOUND).build();
+		}finally{
+			try {
+				nConexion.close();
+			} catch (Exception e) {
+				System.err.println("Fallo al cerrar la conexión con la DB.");
+			}
+		}
 		return resp;
 	}
 
@@ -192,22 +331,31 @@ public class UPMSocial {
 		Response resp=null;
 		if(posts!=null){
 			DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
-			Date date = new Date();
+			Calendar c = Calendar.getInstance();
+			c.add(Calendar.DATE, 1);
 			String fechaFin="";
 			if(fFin.equals(""))
-				fechaFin = df.format(date);
-			else
-				fechaFin = fFin;
+				fechaFin = df.format(c.getTime());
+			else {
+				try {
+					c.setTime(df.parse(fFin));
+				} catch (ParseException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				c.add(Calendar.DATE, 1);
+				fechaFin = df.format(c.getTime());
+			}
+			
 			if(posts.equals(""))
 				posts="%";
-			System.out.println(posts);
+
 			ArrayList<Post> p_list = null;
 			Connection nConexion = null;
 
 			try {
 				nConexion = connectToDB();
 				p_list = obtenerPostsAmigosUsuario(nConexion, username, posts, fInicio, fechaFin, from, to, content);
-				System.out.println(p_list.toString());
 				if (posts != null){
 					resp = Response.ok(new PostList(p_list)).build();
 				}
@@ -297,7 +445,31 @@ public class UPMSocial {
 			return resp;
 		}
 	}
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	public static Connection connectToDB()
 			throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
@@ -330,8 +502,10 @@ public class UPMSocial {
 	public static User obtenerUsuario(Connection conexion, String username)
 			throws SQLException {
 		User user = null;
-		Statement sentencia = conexion.createStatement();
-		ResultSet rsTabla = sentencia.executeQuery("select * from USERS where username=\'"+username+"\'");
+		PreparedStatement sentencia = conexion.prepareStatement("select * from USERS where username = ?");
+		sentencia.setString(1, username);
+
+		ResultSet rsTabla = sentencia.executeQuery();
 
 		while(rsTabla.next()){
 			user = new User();
@@ -352,13 +526,21 @@ public class UPMSocial {
 		Post post;	
 		int aux = to-from;
 		ArrayList<Post> p_list = new ArrayList<Post>();
-		Statement sentencia = conexion.createStatement();
-		ResultSet rsTabla = sentencia.executeQuery("select * from POSTS "
-				+ "where author_username=\'"+username+"\' and creation_date between "
-				+ "str_to_date(\'"+fInicio+"\',\'%d-%m-%Y\') and "
-				+ "str_to_date(\'"+fFin+"\',\'%d-%m-%Y\') and "
-				+"content like \'%"+content+"%\' "
-				+ "order by creation_date asc limit "+from+","+aux);
+		PreparedStatement sentencia = conexion.prepareStatement("select * from POSTS "
+				+ "where author_username = ? and creation_date between "
+				+ "str_to_date(?,?) and str_to_date(?,?) and "
+				+ "content like ? "
+				+ "order by creation_date asc limit ?,?");
+		sentencia.setString(1, username);
+		sentencia.setString(2, fInicio);
+		sentencia.setString(3, "%d-%m-%Y");
+		sentencia.setString(4, fFin);
+		sentencia.setString(5, "%d-%m-%Y");
+		sentencia.setString(6, "%"+content+"%");
+		sentencia.setInt(7, from);
+		sentencia.setInt(8, aux);
+
+		ResultSet rsTabla = sentencia.executeQuery();
 
 		while(rsTabla.next()){
 			post = new Post();
@@ -377,12 +559,18 @@ public class UPMSocial {
 		User user;	
 		int aux = to-from;
 		ArrayList<User> u_list = new ArrayList<User>();
-		Statement sentencia = conexion.createStatement();
-		ResultSet rsTabla = sentencia.executeQuery("select * from USERS "
+
+		PreparedStatement sentencia = conexion.prepareStatement("select * from USERS "
 				+ "join FRIENDS on USERS.username = FRIENDS.friend "
-				+ "where FRIENDS.username=\'"+username+"\' "
-				+ "and USERS.first_name like \'"+nombre+"\' "
-				+ "limit "+from+","+aux);
+				+ "where FRIENDS.username = ? "
+				+ "and USERS.first_name like ? "
+				+ "limit ?,?");
+		sentencia.setString(1, username);
+		sentencia.setString(2, nombre);
+		sentencia.setInt(3, from);
+		sentencia.setInt(4, aux);
+
+		ResultSet rsTabla = sentencia.executeQuery();
 
 		while(rsTabla.next()){
 			user = new User();
@@ -405,15 +593,26 @@ public class UPMSocial {
 		Post post;	
 		int aux = to-from;
 		ArrayList<Post> p_list = new ArrayList<Post>();
-		Statement sentencia = conexion.createStatement();
-		ResultSet rsTabla = sentencia.executeQuery("select * from POSTS "
+
+		PreparedStatement sentencia = conexion.prepareStatement("select * from POSTS "
 				+ "join FRIENDS on POSTS.author_username = FRIENDS.friend "
-				+ "where username=\'"+username+"\' and author_username like \'"+author+"\' "
+				+ "where username = ? and author_username like ? "
 				+ "and creation_date between "
-				+ "str_to_date(\'"+fInicio+"\',\'%d-%m-%Y\') and "
-				+ "str_to_date(\'"+fFin+"\',\'%d-%m-%Y\') and "
-				+ "content like \'%"+content+"%\' "
-				+ "order by creation_date asc limit "+from+","+aux);
+				+ "str_to_date(?,?) and str_to_date(?,?) and "
+				+ "content like ? "
+				+ "order by creation_date asc limit ?,?");
+
+		sentencia.setString(1, username);
+		sentencia.setString(2, author);
+		sentencia.setString(3, fInicio);
+		sentencia.setString(4, "%d-%m-%Y");
+		sentencia.setString(5, fFin);
+		sentencia.setString(6, "%d-%m-%Y");
+		sentencia.setString(7, "%"+content+"%");
+		sentencia.setInt(8, from);
+		sentencia.setInt(9, aux);
+
+		ResultSet rsTabla = sentencia.executeQuery();
 
 		while(rsTabla.next()){
 			post = new Post();
@@ -433,16 +632,23 @@ public class UPMSocial {
 		User user;	
 		int aux = to-from;
 		ArrayList<User> u_list = new ArrayList<User>();
-		Statement sentencia = conexion.createStatement();
 
-		ResultSet rsTabla = sentencia.executeQuery("select * from USERS "
+		PreparedStatement sentencia = conexion.prepareStatement("select * from USERS "
 				+ "join FRIENDS on USERS.username = FRIENDS.friend "
 				+ "where FRIENDS.username in (select USERS.username from USERS "
 				+ "join FRIENDS on USERS.username = FRIENDS.friend "
-				+ "where FRIENDS.username=\'"+username+"\' "
-				+ "and FRIENDS.friend like \'"+amigos+"\') "
-				+ "and first_name like \'"+nombre+"\' "
-				+ "limit "+from+","+aux);
+				+ "where FRIENDS.username = ? "
+				+ "and FRIENDS.friend like ?) "
+				+ "and first_name like ? "
+				+ "limit ?,?");
+
+		sentencia.setString(1, username);
+		sentencia.setString(2, amigos);
+		sentencia.setString(3, nombre);
+		sentencia.setInt(4, from);
+		sentencia.setInt(5, aux);
+
+		ResultSet rsTabla = sentencia.executeQuery();
 
 		while(rsTabla.next()){
 			user = new User();
@@ -461,12 +667,17 @@ public class UPMSocial {
 	public static User obtenerInfoAmigoUsuario(Connection conexion, String username, String id)
 			throws SQLException {
 		User user = null;
-		Statement sentencia = conexion.createStatement();
-		ResultSet rsTabla = sentencia.executeQuery("select * from USERS "
+
+		PreparedStatement sentencia = conexion.prepareStatement("select * from USERS "
 				+ "where username in (select USERS.username from USERS "
 				+ "join FRIENDS on USERS.username = FRIENDS.friend "
-				+ "where FRIENDS.username=\'"+username+"\') "
-				+ "and username like \'"+id+"\'");
+				+ "where FRIENDS.username = ?) "
+				+ "and username like ?");
+
+		sentencia.setString(1, username);
+		sentencia.setString(2, id);
+
+		ResultSet rsTabla = sentencia.executeQuery();
 
 		while(rsTabla.next()){
 			user = new User();
@@ -480,5 +691,88 @@ public class UPMSocial {
 		}
 		return user;
 	}
-}
 
+	/*
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<post>
+<content>El más allá es un lugar lúgubre...</content>
+</post>
+
+	 */
+	public static void nuevoUsuario(Connection conexion, String username, User user)
+			throws SQLException {
+
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+		Date date = new Date();
+		String reg_date = df.format(date);
+
+		PreparedStatement query = conexion.prepareStatement("insert into USERS values (?,?,?,?,?,?,?)");
+		query.setString(1, user.getUsername());
+		query.setString(2, user.getFirst_name());
+		query.setString(3, user.getLast_name());
+		if(user.getPhone() != null){
+			query.setInt(4, user.getPhone());
+		}else{ 
+			query.setNull(4, Types.INTEGER);
+		}
+		query.setString(5, user.getEmail());
+		query.setString(6, user.getAddress());
+		query.setString(7, reg_date);
+
+		query.executeUpdate();
+	}
+
+	public static int nuevoPost(Connection conexion, String username, Post post)
+			throws SQLException {
+
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+		Date date = new Date();
+		String reg_date = df.format(date);
+
+		PreparedStatement query = conexion.prepareStatement("insert into POSTS(author_username, content, creation_date) "
+				+ "values (?,?,?)", Statement.RETURN_GENERATED_KEYS);
+		query.setString(1, username);
+		query.setString(2, post.getContent());
+		query.setString(3, reg_date);
+
+		query.executeUpdate();
+
+		ResultSet generatedKeys = query.getGeneratedKeys();
+		generatedKeys.next();
+
+		return generatedKeys.getInt(1);
+	}
+	
+	public static void editarPost(Connection conexion, String username, Post post, int id)
+			throws SQLException {
+
+
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+		Date date = new Date();
+		String edit_date = df.format(date);
+		
+		PreparedStatement query = conexion.prepareStatement("update POSTS set content = ?, "
+				+ "last_edited = ? "
+				+ "where author_username = ? and id = ?");
+
+		query.setString(1, post.getContent());
+		query.setString(2, edit_date);
+		query.setString(3, username);
+		query.setInt(4, id);
+
+		query.executeUpdate();
+	}
+	
+	public static void eliminarPost(Connection conexion, String username, int id)
+			throws SQLException {
+		
+		PreparedStatement query = conexion.prepareStatement("delete from POSTS "
+				+ "where author_username = ? and id = ?");
+
+		query.setString(1, username);
+		query.setInt(2, id);
+
+		query.executeUpdate();
+	}
+	
+}
