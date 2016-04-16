@@ -87,6 +87,10 @@ sino estelas en la mar.','2013-12-31'),
 ('8','v130111','En un lugar de la mancha4...','2007-03-25');
 COMMIT;
 
+insert into USERS(username, first_name, register_date) values ('v1301088', 'Antonio', CURDATE());
+insert into POSTS values ('9','v1301088','Post de prueba1...','2010-03-25');
+insert into FRIENDS values ('v130111', ('v1301088'));
+
 BEGIN;
 INSERT INTO FRIENDS 
 VALUES 
@@ -153,9 +157,56 @@ select * from POSTS
 where content like '%lugar de la mancha%'
 limit 0,5;
 
+select * from POSTS
+join FRIENDS on POSTS.author_username = FRIENDS.friend
+where username='v130111'
+and creation_date between str_to_date('01-01-2000','%d-%m-%Y') and str_to_date('01-01-2017','%d-%m-%Y')
+and content like '%%%'
+order by creation_date asc
+limit 0,5;
+
+select * from POSTS
+join FRIENDS on POSTS.author_username = FRIENDS.friend
+where FRIENDS.username='v130111';
+
+insert into POSTS(author_username, content, creation_date) values ('v1301088', 'Post de prueba2...', CURDATE());
+
+select * from POSTS
+join FRIENDS on POSTS.author_username = FRIENDS.friend
+where username='v130111'
+and author_username like 'v1301088'
+and creation_date between str_to_date('01-01-2000','%d-%m-%Y') and str_to_date('01-01-2017','%d-%m-%Y')
+and content like '%%%'
+order by creation_date asc
+limit 0,5;
+
+select * from USERS
+join FRIENDS on USERS.username = FRIENDS.friend
+where FRIENDS.username = 'v130111';
+
+insert into FRIENDS values('v1301088','v130000');
+
+select * from USERS
+join FRIENDS on USERS.username= FRIENDS.friend
+where FRIENDS.username in (select USERS.username from USERS
+join FRIENDS on USERS.username = FRIENDS.friend
+where FRIENDS.username='v130111'
+and FRIENDS.friend like '%')
+and first_name like 'Roberto'
+limit 0, 5;
+
+select * from USERS
+where username in (select USERS.username from USERS
+join FRIENDS on USERS.username = FRIENDS.friend
+where FRIENDS.username='v130111')
+and username like '%';
 
 
+select * from USERS
+join FRIENDS on USERS.username = FRIENDS.friend
+where FRIENDS.username='v130111';
 
-
-
-
+select * from FRIENDS;
+update USERS set first_name='Rafael' where username='v1301088';
+update USERS set first_name='Roberto' where username='v130107';
+select * from USERS;
