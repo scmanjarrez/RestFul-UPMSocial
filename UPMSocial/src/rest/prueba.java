@@ -1,6 +1,7 @@
 package rest;
 
 import java.sql.Connection;
+
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -20,6 +21,7 @@ import rest.post.Post;
 import rest.post.PostList;
 import rest.user.User;
 
+@SuppressWarnings(value = { "all" })
 public class prueba {
 	public static Connection connectToDB()
 			throws ClassNotFoundException, SQLException {

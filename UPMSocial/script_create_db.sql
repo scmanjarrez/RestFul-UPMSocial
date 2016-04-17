@@ -22,14 +22,14 @@ CREATE TABLE USERS (
     PRIMARY KEY (username)
 )  ENGINE=INNODB;
 
-DELIMITER //
-CREATE TRIGGER `register_date_user` BEFORE INSERT ON  `USERS` 
-	FOR EACH ROW BEGIN
-		IF NEW.register_date IS NULL THEN
-			SET NEW.register_date = NOW();
-		END IF;
-	END;//
-DELIMITER ;
+-- DELIMITER //
+-- CREATE TRIGGER `register_date_user` BEFORE INSERT ON  `USERS` 
+-- 	FOR EACH ROW BEGIN
+-- 		IF NEW.register_date IS NULL THEN
+-- 			SET NEW.register_date = NOW();
+-- 		END IF;
+-- 	END;//
+-- DELIMITER ;
 
         
 CREATE TABLE POSTS (
@@ -226,3 +226,16 @@ update USERS set last_name = 'Chica' where username = 'v130111';
 
 select * from FRIENDS
 where username = 'v130111';
+insert into FRIENDS value('v130111','v120111');
+
+select * from POSTS;
+
+select count(*) as Total from POSTS
+where author_username='v130111'
+and creation_date between str_to_date('01-01-2000','%d-%m-%Y') and str_to_date('01-01-2017','%d-%m-%Y');
+
+select count(id) as Total from POSTS
+where author_username = 'v130111';
+
+select count(username) as Total from FRIENDS
+where username='v130111';

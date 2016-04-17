@@ -28,7 +28,7 @@ public class TodoResource {
   // Web API     
   @Path("{todo}")
   @GET
-  @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+  @Produces(MediaType.TEXT_PLAIN)
   public Response getTodo(@PathParam("todo") String id) {
 	  Response res;
 	  Todo todo;
