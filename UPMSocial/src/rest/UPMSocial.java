@@ -288,7 +288,7 @@ public class UPMSocial {
 			try {
 				c.setTime(df.parse(fFin));
 			} catch (ParseException e) {
-				e.printStackTrace();
+				return Response.status(Response.Status.BAD_REQUEST).build();
 			}
 			c.add(Calendar.DATE, 1);
 			fechaFin = df.format(c.getTime());
@@ -299,15 +299,15 @@ public class UPMSocial {
 
 		try {
 			nConexion = connectToDB();
+			try{
 			posts = obtenerPostsUsuario(nConexion, username, fInicio, fechaFin, from, to, content);
 			if (posts != null){
-				if(posts.isEmpty()){
-					resp = Response.status(Response.Status.BAD_REQUEST).build();
-				} else 
-					resp = Response.ok(new PostList(posts)).build();
+				resp = Response.ok(new PostList(posts)).build();
 			} else
 				resp = Response.status(Response.Status.NOT_FOUND).build();
-
+			} catch (SQLException e){
+				resp = Response.status(Response.Status.BAD_REQUEST).build();
+			}
 		} catch (ClassNotFoundException | SQLException e) {
 			System.err.println("Fallo al conectar a la DB.");
 			resp = Response.status(Response.Status.NOT_FOUND).build();
@@ -346,7 +346,7 @@ public class UPMSocial {
 			try {
 				c.setTime(df.parse(fFin));
 			} catch (ParseException e) {
-				e.printStackTrace();
+				return Response.status(Response.Status.BAD_REQUEST).build();
 			}
 			c.add(Calendar.DATE, 1);
 			fechaFin = df.format(c.getTime());
@@ -569,7 +569,7 @@ public class UPMSocial {
 				try {
 					c.setTime(df.parse(fFin));
 				} catch (ParseException e) {
-					e.printStackTrace();
+					return Response.status(Response.Status.BAD_REQUEST).build();
 				}
 				c.add(Calendar.DATE, 1);
 				fechaFin = df.format(c.getTime());

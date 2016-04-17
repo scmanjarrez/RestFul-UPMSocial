@@ -239,3 +239,6 @@ where author_username = 'v130111';
 
 select count(username) as Total from FRIENDS
 where username='v130111';
+
+delete from FRIENDS
+where (username, friend) in (('v130111','v1301088'),('v1301088','v130111'));

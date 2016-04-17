@@ -13,7 +13,6 @@
 <fullyQualifiedTypeName name="org.glassfish.jersey.client.ClientConfig"/>
 <fullyQualifiedTypeName name="org.glassfish.jersey.filter.LoggingFilter"/>
 <fullyQualifiedTypeName name="javax.ws.rs.client.WebTarget"/>
-<fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
 <fullyQualifiedTypeName name="javax.ws.rs.client.Invocation"/>
 <fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.Response"/>
@@ -27,7 +26,6 @@
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.text.DateFormat"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-<fullyQualifiedTypeName name="java.text.ParseException"/>
 <fullyQualifiedTypeName name="javax.ws.rs.DefaultValue"/>
 <fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlElement"/>
 <fullyQualifiedTypeName name="javax.sound.midi.Synthesizer"/>
@@ -43,5 +41,8 @@
 <fullyQualifiedTypeName name="javax.ws.rs.PUT"/>
 <fullyQualifiedTypeName name="javax.ws.rs.DELETE"/>
 <fullyQualifiedTypeName name="java.sql.Types"/>
+<fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
+<fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="java.text.ParseException"/>
 </qualifiedTypeNameHistroy>

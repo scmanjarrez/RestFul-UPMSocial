@@ -9,6 +9,7 @@ import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -130,7 +131,7 @@ public class prueba {
 		String reg_date = df.format(date);
 		System.out.println(reg_date);*/
 
-		String sql = "update USERS set";
+		/*String sql = "update USERS set";
 
 		sql = sql +" first_name = ?,";
 		sql = sql +" last_name = ?,";
@@ -139,7 +140,7 @@ public class prueba {
 		sql = sql +" address = ?,";
 		sql = sql.substring(0,sql.length()-1)+" ";
 		sql = sql+"where author_username = ?";
-		System.out.println(sql);
+		System.out.println(sql);*/
 		/*	
 		PostList p_list = new PostList();
 		Post post = new Post();
@@ -168,6 +169,22 @@ public class prueba {
             e.printStackTrace();
         }
 		 */
+		String fInicio="2014-21-01";
+		String fFin="123";
+		DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
+		Date algo;
+		try {
+			System.out.println("hola?");
+			algo = df.parse(fInicio);
+			algo = df.parse(fFin);
+			System.out.println(algo);
+			System.out.println("eh?");
+		} catch (Exception e2) {
+			System.out.println("eh?");
+			System.out.println("holaaaaaaa");
+		}
+		
+		System.out.println("wtf?!!!!!");
 	}
 
 }
