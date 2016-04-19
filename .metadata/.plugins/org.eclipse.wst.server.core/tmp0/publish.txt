@@ -1,5 +1,5 @@
 #GlassFish 3
-#Mon Apr 18 00:22:02 CEST 2016
+#Tue Apr 19 02:46:35 CEST 2016
 org.eclipse.jst.jee.server\:REST2JAXRS=C\:\\Users\\scman\\Desktop\\Universidad\\3-Tercero\\Segundo Cuatrimestre\\Sistemas Orientados a Servicios VI\\RestFul\\glassfish-4.1.1\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\REST2JAXRS
 org.eclipse.jst.jee.server\:REST1HolaMundo=C\:\\Users\\scman\\Desktop\\Universidad\\3-Tercero\\Segundo Cuatrimestre\\Sistemas Orientados a Servicios VI\\RestFul\\glassfish-4.1.1\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\REST1HolaMundo
 org.eclipse.jst.jee.server\:REST1bHolaMundo=C\:\\Users\\scman\\Desktop\\Universidad\\3-Tercero\\Segundo Cuatrimestre\\Sistemas Orientados a Servicios VI\\RestFul\\glassfish-4.1.1\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\REST1bHolaMundo
