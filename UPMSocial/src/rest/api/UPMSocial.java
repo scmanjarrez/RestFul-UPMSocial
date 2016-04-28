@@ -38,14 +38,6 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-/**
- * 
- * @author Sergio Chica Manjarrez
- * 
- * @version 0.1
- * 
- */
-
 /*
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <post>
